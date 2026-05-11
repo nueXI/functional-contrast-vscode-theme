@@ -1,5 +1,5 @@
 {
-  "name": "Functional Contrast",
+  "name": "Functional Contrast - custom",
   "type": "dark",
   "colors": {
     "activityBar.background": "#050505",
@@ -22,10 +22,10 @@
     "editorWhitespace.foreground": "#222222",
     "peekViewResult.matchHighlightBackground": "#302a4e",
     // Status bar
-    //		debug
+    //    debug
     "statusBar.debuggingBackground": "#b12350dd",
     "statusBar.debuggingForeground": "#ffffff",
-    //		normal
+    //    normal
     "statusBar.background": "#000",
     "statusBar.foreground": "#ffffff",
     "statusBar.noFolderBackground": "#024d45",
@@ -58,33 +58,39 @@
     "terminal.ansiYellow": "#FFCC66",
     "terminal.background": "#000000",
     "terminal.foreground": "#B3B3D4",
+    // From workbench.colorCustomizations
+    "editorError.background": "#ff7676",
+    "editorError.foreground": "#ff0000"
+  },
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "variable": {
+      "foreground": "#4f5aff",
+      "bold": true
+    },
+    "parameter": {
+      "foreground": "#eeff00",
+      "italic": true
+    },
+    "class": {
+      "foreground": "#4EC9B0"
+    },
+    "type": {
+      "foreground": "#4EC9B0"
+    },
+    "property.declaration": {
+      "foreground": "#9CDCFE"
+    }
   },
   "tokenColors": [
     {
       "scope": "source",
       "settings": {
-        "foreground": "#a9e9df",
+        "foreground": "#a9e9df"
       }
     },
     {
       "scope": "variable.other.assignment",
-      "settings": {
-        "foreground": "#ff9735",
-      }
-    },
-    {
-      "scope": [
-        "meta.import",
-        "entity.name.namespace",
-        "meta.declaration.module",
-        "support.module",
-        "support.node",
-        "support.other.module",
-        "support.type.object.module",
-        "entity.name.type.module",
-        "entity.name.type.class.module",
-        "keyword.control.module"
-      ],
       "settings": {
         "foreground": "#ff9735"
       }
@@ -241,7 +247,7 @@
     {
       "scope": "invalid.deprecated",
       "settings": {
-        "foreground": "#F8F8F0",
+        "foreground": "#F8F8F0"
       }
     },
     {
@@ -276,9 +282,7 @@
       }
     },
     {
-      "scope": [
-        "entity.name.function.js",
-      ],
+      "scope": ["entity.name.function.js"],
       "settings": {
         "fontStyle": "bold"
       }
@@ -295,6 +299,70 @@
       ],
       "settings": {
         "fontStyle": ""
+      }
+    },
+    // From user settings - Template expressions (JS/TS)
+    {
+      "scope": "meta.template.expression",
+      "settings": {
+        "foreground": "#4FC1FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "punctuation.definition.template-expression.begin",
+        "punctuation.definition.template-expression.end"
+      ],
+      "settings": {
+        "foreground": "#FFD700"
+      }
+    },
+    // From user settings - JSX
+    {
+      "scope": ["meta.jsx.children", "string.jsx"],
+      "settings": {
+        "foreground": "#ffffff"
+      }
+    },
+    {
+      "scope": "meta.jsx.expression",
+      "settings": {
+        "foreground": "#4FC1FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "punctuation.section.embedded.begin.jsx",
+      "settings": {
+        "foreground": "#FFD700"
+      }
+    },
+    {
+      "scope": "punctuation.section.embedded.end.jsx",
+      "settings": {
+        "foreground": "#FFD700"
+      }
+    },
+    // From user settings - TypeScript types
+    {
+      "scope": "entity.name.type.interface",
+      "settings": {
+        "foreground": "#FF6B6B",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "entity.name.type",
+      "settings": {
+        "foreground": "#4EC9B0"
+      }
+    },
+    // From user settings - Properties
+    {
+      "scope": "variable.other.property",
+      "settings": {
+        "foreground": "#9CDCFE"
       }
     },
     // Generated JSON - START
@@ -712,20 +780,16 @@
     },
     // Elm
     {
-      "scope": [
-        "constant.type-constructor.elm"
-      ],
+      "scope": ["constant.type-constructor.elm"],
       "settings": {
-        "foreground": "#b267e6",
+        "foreground": "#b267e6"
       }
     },
     {
-      "scope": [
-        "entity.name.record.field.elm"
-      ],
+      "scope": ["entity.name.record.field.elm"],
       "settings": {
-        "foreground": "#00a999",
+        "foreground": "#00a999"
       }
-    },
+    }
   ]
 }
