@@ -22,7 +22,14 @@
 
 To learn more about scopes and how they're used, check out the [color theme](https://code.visualstudio.com/api/extension-guides/color-theme) documentation.
 
+## Build your extension
+
+* This project has no local `devDependencies`, so package via `npx`: `npx @vscode/vsce package`.
+* This reads `package.json` and bundles everything not excluded by `.vscodeignore` into a `.vsix` file (e.g. `functional-contrast-custom-1.0.0.vsix`).
+* Bump the `version` field in `package.json` first if you don't want to overwrite the existing `.vsix`.
+
 ## Install your extension
 
-* To start using your extension with Visual Studio Code copy it into the `<user home>/.vscode/extensions` folder and restart Code.
+* From the packaged `.vsix`: run `code --install-extension functional-contrast-custom-1.0.0.vsix`, or in VS Code open the Extensions view `...` menu and choose `Install from VSIX...`.
+* Alternatively, copy the extension folder into the `<user home>/.vscode/extensions` folder and restart Code.
 * To share your extension with the world, read on https://code.visualstudio.com/docs about publishing an extension.

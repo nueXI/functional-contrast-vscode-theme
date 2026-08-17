@@ -59,8 +59,8 @@
     "terminal.background": "#000000",
     "terminal.foreground": "#B3B3D4",
     // From workbench.colorCustomizations
-    "editorError.background": "#ff7676",
-    "editorError.foreground": "#ff0000"
+    "editorError.background": "#ff0000",
+    "editorError.foreground": "#000000"
   },
   "semanticHighlighting": true,
   "semanticTokenColors": {
